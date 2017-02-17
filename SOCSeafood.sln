@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SOCSeafood", "src\SOCSeafood\SOCSeafood.xproj", "{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{014AFFD5-CD6A-49B7-A9A2-5B1CC00674BC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SOCSeafood.Tests", "SOCSeafood.Tests\SOCSeafood.Tests.xproj", "{255B9628-EB12-4CB3-87A1-232B37603A7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +26,16 @@ Global
 		{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255B9628-EB12-4CB3-87A1-232B37603A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255B9628-EB12-4CB3-87A1-232B37603A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255B9628-EB12-4CB3-87A1-232B37603A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255B9628-EB12-4CB3-87A1-232B37603A7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB} = {722259CB-2395-4792-94D2-2538E5071460}
+		{255B9628-EB12-4CB3-87A1-232B37603A7D} = {014AFFD5-CD6A-49B7-A9A2-5B1CC00674BC}
 	EndGlobalSection
 EndGlobal
