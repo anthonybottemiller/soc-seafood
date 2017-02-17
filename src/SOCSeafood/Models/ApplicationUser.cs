@@ -2,7 +2,7 @@
 
 namespace SOCSeafood.Models
 {
-    public class ApplicationAdministrator : IdentityUser
+    public class ApplicationUser : IdentityUser
     {
     }
 }

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SOCSeafood.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationAdministrator>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
@@ -25,5 +25,6 @@ namespace SOCSeafood.Models
         {
             base.OnModelCreating(builder);
         }
+
     }
 }
