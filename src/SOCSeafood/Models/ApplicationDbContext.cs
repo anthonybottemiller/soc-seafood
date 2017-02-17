@@ -13,5 +13,17 @@ namespace SOCSeafood.Models
         {
 
         }
+
+        public DbSet<Customer> Customers { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=SOCSeafood;integrated security=True");
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }
