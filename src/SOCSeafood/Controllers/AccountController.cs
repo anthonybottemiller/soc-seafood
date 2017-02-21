@@ -40,6 +40,26 @@ namespace SOCSeafood.Controllers
                 return View();
             }
         }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register (RegisterViewModel model)
+        {
+            var user = new ApplicationUser { UserName = model.UserName };
+            IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                return View();
+            }
+        }
         [Authorize]
         public IActionResult Index()
         {
