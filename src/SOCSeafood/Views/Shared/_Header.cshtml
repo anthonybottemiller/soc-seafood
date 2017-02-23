@@ -5,6 +5,7 @@
     @if (Context.User.Identity.IsAuthenticated)
     {
         <a href='@Url.Action("Index", "Subscribers")' class="btn btn-primary">Master Newsletter List</a>
+        <a href='@Url.Action("Logout", "Account")' class="btn btn-primary">Log Out</a>
     }
     <hr />
 </div>
