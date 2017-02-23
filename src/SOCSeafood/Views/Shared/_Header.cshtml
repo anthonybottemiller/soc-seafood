@@ -2,5 +2,9 @@
     <h1>Son of Cod Seafood</h1>
     <a href='@Url.Action("Index", "Home")' class="btn btn-primary">Home</a>
     <a href='@Url.Action("Login", "Account")' class="btn btn-primary">Log In</a>
+    @if (Context.User.Identity.IsAuthenticated)
+    {
+        <a href='@Url.Action("Index", "Subscribers")' class="btn btn-primary">Master Newsletter List</a>
+    }
     <hr />
 </div>
