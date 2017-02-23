@@ -11,17 +11,18 @@
     <h4>Register new Administrator</h4>
     @using (Html.BeginForm("Register", "Account", FormMethod.Post))
     {
+        @Html.ValidationSummary(true)
         <div class="form-group">
             @Html.LabelFor(m => m.UserName)
             @Html.TextBoxFor(m => m.UserName)
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.Password)
-            @Html.TextBoxFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.ConfirmPassword)
-            @Html.TextBoxFor(m => m.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword)
         </div>
         <input type="submit" value="Register" class="btn btn-success"/>
 
