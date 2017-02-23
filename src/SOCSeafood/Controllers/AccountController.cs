@@ -16,10 +16,6 @@ namespace SOCSeafood.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController()
-        {
-
-        }
 
         public AccountController (UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db)
         {
@@ -27,6 +23,7 @@ namespace SOCSeafood.Controllers
             _signInManager = signInManager;
             _db = db;
         }
+
         public IActionResult Login()
         {
             return View();
