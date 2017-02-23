@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D7BBC8D-4354-4825-B5E7-9D1BDC4134A4}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SOCSeafood", "src\SOCSeafood\SOCSeafood.xproj", "{3F0D58EC-3CAE-4BB6-B3BA-6CE1E73460CB}"
