@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Newsletter Subscibers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<SOCSeafood.Models.Subscriber>
+
+<div class="Subscribers">
+    <h1>Subscibers</h1>
+    <ol>
+    @foreach(var subscriber in Model)
+        {
+            <li>@subscriber.Email</li>
+        }
+    </ol>
+</div>

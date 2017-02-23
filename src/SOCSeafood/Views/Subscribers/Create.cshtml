@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Newsletter Subscibers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model SOCSeafood.Models.Subscriber
+
+<div class="subscriber-form">
+    <h2>Subscriber to our newsletter!</h2>
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email)
+            @Html.TextBoxFor(model => model.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Phone)
+            @Html.TextBoxFor(model => model.Phone)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ZipCode)
+            @Html.TextBoxFor(model => model.ZipCode)
+        </div>
+        <input class="btn btn-success" type="submit" value="Sign Up Now!" />
+    }
+</div>

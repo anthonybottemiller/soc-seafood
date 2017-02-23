@@ -7,14 +7,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SOCSeafood.Models
 {
-    [Table("Customers")]
+    [Table("Subscribers")]
     public class Subscriber
     {
         [Key]
         public int CustomerId { get; set; }
-        public string Name { get; set; }
+        [Required]
+        public string Email { get; set; }
         public string Phone { get; set; }
+        [Display(Name = "Zip Code")]
         public int ZipCode { get; set; }
-        public string Country { get; set; }
+        public string Name { get; set; }
     }
 }

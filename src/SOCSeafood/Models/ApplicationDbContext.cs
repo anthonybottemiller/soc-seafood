@@ -9,12 +9,12 @@ namespace SOCSeafood.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext()
         {
 
         }
 
-        public DbSet<Subscriber> Customers { get; set; }
+        public DbSet<Subscriber> Subscribers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
