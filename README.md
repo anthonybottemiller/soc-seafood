@@ -30,6 +30,7 @@ This project will provide Son Of Cod Seafood with a web application that provide
 The style of the project was inspired by [Pacific Seafood](https://www.pacseafood.com/)
 
 ##Admin Seeding
+* This script generates a new application user with the user name "Admin" and password "!23abcA" This is usefull so that you can register new administrators.
 * If you have SSMS installed simply double click on the "SeedAdmin" script at the root of the repository and execute.
 * Otherwise navigate to the root of the repository and execute 'sqlcmd -S "(localdb)\mssqllocaldb" -E -i SeedAdmin.sql'
 
