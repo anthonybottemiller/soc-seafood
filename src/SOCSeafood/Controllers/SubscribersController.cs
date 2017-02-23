@@ -14,21 +14,12 @@ namespace SOCSeafood.Controllers
 {
     public class SubscribersController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-
-        public SubscribersController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _db = db;
-        }
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         [Authorize]
         public IActionResult Index()
         {
-            return View(_db.Subscribers.ToList());
+            return View(db.Subscribers.ToList());
         }
 
         public IActionResult Create()
@@ -39,8 +30,8 @@ namespace SOCSeafood.Controllers
         [HttpPost]
         public IActionResult Create(Subscriber subscriber)
         {
-            _db.Subscribers.Add(subscriber);
-            _db.SaveChanges();
+            db.Subscribers.Add(subscriber);
+            db.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
     }

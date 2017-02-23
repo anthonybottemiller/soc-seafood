@@ -1,0 +1,10 @@
+﻿.responsibility {
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    background-color: #3531FF;
+    color: white;
+    border: 5px solid #3531FF;
+    border-radius: 5px 5px;
+}
