@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SOCSeafood.Models
 {
     [Table("Customers")]
-    public class Customer
+    public class Subscriber
     {
         [Key]
         public int CustomerId { get; set; }

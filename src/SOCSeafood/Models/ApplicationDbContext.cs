@@ -14,7 +14,7 @@ namespace SOCSeafood.Models
 
         }
 
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Subscriber> Customers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
